@@ -1,0 +1,32 @@
+uuid: db87e3df-7b06-4c12-8606-96ef029cc656
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cover.field_author
+    - field.field.node.cover.field_category
+    - field.field.node.cover.field_comments
+    - field.field.node.cover.field_cover
+    - field.field.node.cover.field_publication_date
+    - field.field.node.cover.field_sinopsis
+    - node.type.cover
+  module:
+    - user
+id: node.cover.teaser
+targetEntityType: node
+bundle: cover
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_author: true
+  field_category: true
+  field_comments: true
+  field_cover: true
+  field_publication_date: true
+  field_sinopsis: true

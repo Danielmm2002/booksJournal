@@ -1,0 +1,29 @@
+uuid: de4137a2-6acf-4521-90fa-c9ed0a427900
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.cover
+    - taxonomy.vocabulary.tags
+id: node.cover.field_category
+field_name: field_category
+entity_type: node
+bundle: cover
+label: Category
+description: 'Category of the book'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

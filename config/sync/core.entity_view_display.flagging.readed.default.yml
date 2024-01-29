@@ -1,0 +1,18 @@
+uuid: 66170709-b3a4-45d6-999c-25515eac7e40
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.readed
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: flagging.readed.default
+targetEntityType: flagging
+bundle: readed
+mode: default
+content: {  }
+hidden: {  }

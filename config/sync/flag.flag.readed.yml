@@ -1,0 +1,30 @@
+uuid: 79156bfc-2ac3-42a8-b606-c62d6808015f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: readed
+label: Readed
+bundles:
+  - cover
+entity_type: node
+global: false
+flag_short: Read
+flag_long: ''
+flag_message: 'Book added to the read list'
+unflag_short: Unread
+unflag_long: ''
+unflag_message: 'Book removed to the read list'
+unflag_denied_text: ''
+weight: 0
+flag_type: 'entity:node'
+link_type: reload
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: true
+  show_on_form: true
+  show_contextual_link: false
+  extra_permissions:
+    owner: owner
+linkTypeConfig: {  }

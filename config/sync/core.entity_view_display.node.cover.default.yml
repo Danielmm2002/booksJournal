@@ -49,7 +49,7 @@ third_party_settings:
                   image_loading:
                     attribute: lazy
                 third_party_settings: {  }
-            weight: 1
+            weight: 3
             additional: {  }
           b8d3b8c3-deb0-4b34-b527-3b25c7a465c0:
             uuid: b8d3b8c3-deb0-4b34-b527-3b25c7a465c0
@@ -83,7 +83,7 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 3
+            weight: 5
             additional: {  }
           42458c21-670b-4573-8a16-4a3d46685870:
             uuid: 42458c21-670b-4573-8a16-4a3d46685870
@@ -103,7 +103,7 @@ third_party_settings:
                   timezone_override: ''
                   format_type: html_date
                 third_party_settings: {  }
-            weight: 2
+            weight: 4
             additional: {  }
           4a771927-f003-4298-ba5d-b9c3b76eab69:
             uuid: 4a771927-f003-4298-ba5d-b9c3b76eab69
@@ -119,7 +119,22 @@ third_party_settings:
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            weight: 0
+            weight: 2
+            additional: {  }
+          ba629559-5951-4bc6-904c-19a320a8ba9b:
+            uuid: ba629559-5951-4bc6-904c-19a320a8ba9b
+            region: first
+            configuration:
+              id: 'extra_field_block:node:cover:flag_readed'
+              label: 'Flag: <em class="placeholder">Readed</em>'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
             additional: {  }
         third_party_settings: {  }
       -
@@ -197,6 +212,11 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  flag_readed:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: first
   links:
     settings: {  }
     third_party_settings: {  }

@@ -1,0 +1,15 @@
+uuid: 976e7f5c-9b04-4b20-b7cb-a022ae0996fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.readed
+  module:
+    - flag
+id: flag_action.readed_flag
+label: 'Flag this item'
+type: node
+plugin: 'flag_action:readed_flag'
+configuration:
+  flag_id: readed
+  flag_action: flag

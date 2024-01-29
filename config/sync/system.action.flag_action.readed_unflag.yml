@@ -1,0 +1,15 @@
+uuid: 265877a0-7d2d-43a6-860c-1d842377e5b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.readed
+  module:
+    - flag
+id: flag_action.readed_unflag
+label: 'Unflag this item'
+type: node
+plugin: 'flag_action:readed_unflag'
+configuration:
+  flag_id: readed
+  flag_action: unflag
